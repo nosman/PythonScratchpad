@@ -7,7 +7,6 @@ def curry(func):
     
     def helper(arg):
         args_list.append(arg)
-        print args_list
         if len(args_list) == num_args:
             args_list.reverse()
             return func(*tuple(args_list))
